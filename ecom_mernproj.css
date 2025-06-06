@@ -1,0 +1,460 @@
+* { margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'spartan',sans serif;}
+
+h1 {
+    font-size:50px; 
+    line-height:64px;
+    color:#222;
+   }
+
+h2 {
+
+   font-size:46px; 
+   line-height:0px;
+   color:#222;
+  }
+
+
+
+h4 {
+
+   font-size:12px;
+   font-weight:700; 
+   }
+
+p {
+    font-size:20px; 
+    font-weight:700; 
+    margin:15px 0 20px 0;
+    color:#222;
+   }
+
+button.normal {background-color:white;
+               color:black;
+               font-size:14px;
+               font-weight:600;
+            padding:15px 30px;
+        border-radius:4px;
+        cursor:pointer;
+        border:none;
+        outline:none;
+        transition:0.2s;
+    }
+
+button.white {background-color:transparent;
+               color:white;
+               font-size:13px;
+               font-weight:600;
+            padding:11px 18px;
+        
+        cursor:pointer;
+        border:1px solid;
+        outline:none;
+        transition:0.2s;
+    }
+
+.section-p1
+    {
+    padding:40px 80px;
+    }
+
+.section-m1
+    {
+
+       margin:40px 0; 
+    }
+
+body {width:100%;}
+
+
+
+
+
+
+
+/*brand logo and nav bar section*/
+
+#header
+    {
+        display:flex;
+        align-items:center;
+        justify:space-between;
+        padding:10px 80px;
+        background:rgb(240, 248, 255); 
+        box-shadow:0 0 15px rgb(0,0,0,0.06);
+        z-index:999;     /* using these 4 lines navigation bar comes along when scrolled down*/
+        position:sticky;
+        top:0;
+        left:0;
+
+    }
+.logo {margin-left:-5%;
+       margin-right:50%;
+       width:25px;
+       height:100px;}
+
+       .logo img {
+       width: 120px;   /* adjust as needed */
+       height: auto;   /* maintains the image’s aspect ratio */
+}
+
+#navbar
+    {
+       display:flex;
+       align-items:center;
+       justify:space-between;
+        margin-right:-300%;  /*hv to change this -value*/
+    }
+
+#navbar li 
+    {list-style:none;     /* to remove bullets in list*/
+     padding: 0px 20px;
+     margin-left:1%;
+     margin-right:2%;
+    }
+
+#navbar a
+    {
+     text-decoration:none;   /* to remove underline in */
+     font-weight:600;
+     font-size:16px;
+     color:black;
+     transition:1s ease;
+    }
+
+
+#navbar a:hover,#navbar a.active
+    {
+     color:aqua;
+    }
+
+
+/*hero section*/
+
+#hero {
+  background-image: url("img/hero.jpg");
+  height:90vh;
+  width:100%;
+  background-position:cover;
+  background position:top 25% right 0;
+  padding: 0 80px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+
+
+}
+
+#hero h2 { padding-bottom:-40px;}
+
+#hero p{color:#80D8C3;
+        padding-top:20px;
+        }
+
+.fe-box { 
+    width:180px;
+    padding:25px 15px;
+    text-align:center;
+    border:1px solid black;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+    border-radius:4px;
+    margin:15px 0;
+    
+    
+}
+
+#feature  {display:flex;
+           align-items:center;
+           justify-content:space-between;
+           flex-wrap:wrap;}
+
+#feature .fe-box:hover{box-shadow: 10px 10px 54px #393E46;}/*rgba(0,0,0,0.5)*/
+
+#feature .fe-box h6
+ { display:inline-block;
+    font-size:18px;
+   color:#273F4F;
+   background-color:#EAE4D5;
+   padding:9px 8px 6px 8px;
+   line-height:1px;
+   border-radius:4px;
+   }
+
+#feature .fe-box img {width:100%; 
+     /*img didnt fit correctly using this made it fit properly provided in video itself*/
+                     object-fit:cover;
+                      
+                     margin-bottom:10px;}
+
+#product1 { text-align:center;}
+
+
+
+#product1 .pro-container { display:flex;
+                         flex-direction:row;
+                        justify-content:space-between;
+                        padding-top:20px;
+                        flex-wrap:wrap; }
+
+
+#product1 .pro {width:23%;
+               min-width:250px;
+               padding:10px 12px;
+               border:1px solid #cce7d0;
+               border-radius:25px;
+               cursor:pointer;
+               box-shadow:20px 20px 30px rgba(0,0,0,0.02);
+               margin:15px 0;
+               transition:0.2s;
+               position:relative;}
+
+#product1 .pro:hover{box-shadow:20px 20px 30px rgb(100, 120, 140);}
+
+#product1 .pro img{width:100%;
+                   border-radius:20px;}                
+                   
+#product1 .pro .des {text-align:start;
+                    padding:10px 0;}
+
+#product1 .pro .des span {color:#606063;
+                         font-size:18px;}
+
+#product1 h4{font-size:50px;}
+
+#product1 h4 {
+    margin-bottom: 5px;
+}
+
+#product1 p {
+    margin-top: 0;
+}
+
+#product1 .pro .des h5 {color:#606063;
+                         font-size:20px;
+                        font-weight:400px;
+                        padding-top:7px;
+                        color:#1a1a1a;}
+                
+#product1 .pro .des i{color:#123458;}
+
+#product1 .pro .des h4 {font-size:20px;
+                        font-weight:700;
+                         color:#088178;
+                        padding-top:7px;}
+
+/*foll cart design doesnt seem to work..*/
+#product1 .pro .des .cart{width:40px;
+                         height:40px;
+                        line-height:40px;
+                        
+                        color:#123458;
+                        font-weight:500px;
+                        background-color:white;
+                        position:absolute;
+                        bottom:20px;
+                        right:10px;
+                        
+                    }
+
+#banner {display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-allign:center;
+
+        background-image:url("img/callfahor.jpg");
+        height:40vh;
+        width:100%;
+        background-position:center;
+        background-size:cover;
+
+        }
+
+#banner h4{color:white;
+           font-size:16px;
+           margin-bottom:20px;}
+
+#banner h2{color:white;
+           font-size:20x;
+           padding:10px 0;
+           margin-bottom:25px;}
+
+#banner button:hover{background-color:#A7C1A8;}
+
+#sm-banner {display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;}
+
+#sm-banner .banner-box {display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+    
+        background-image:url("img/b2.jpg");
+        height:50vh;
+        width:670px;
+        background-position:center;
+        background-size:cover;
+        padding:30px;}
+
+#sm-banner .banner-box2 {background-image:url("img/b7.jpg");}
+
+#sm-banner h4{color:white;
+           font-size:20px;
+           font-weight:300;
+           margin-bottom:3px;
+           padding-bottom:5px;}
+
+#sm-banner h2{color:black;
+           font-size:28x;
+           font-weight:500;
+           padding:10px 0;
+           margin-bottom:15px;}
+
+#sm-banner span {color:white;
+           font-size:14px;
+           font-weight:500;
+           padding-bottom:15px ;
+           }
+
+#sm-banner button:hover{background-color:#80D8C3;}
+
+#sm-banner .banner-box2 h2{
+           font-weight:800;
+           color:#A4CCD9;
+           }
+
+#banner3{display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        padding:0 80px;}
+
+#banner3 .banner-box {display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+    
+        background-image:url("img/b5.jpg");
+        height:30vh;
+        min-width:32%;
+        background-position:center;
+        background-size:cover;
+        padding:20px;
+        margin-bottom:20px;}
+
+#banner3 .banner-box2 {background-image:url("img/b3.jpg");}
+
+#banner3 .banner-box3 {background-image:url("img/b41.jpg");}
+
+#banner3  h2{font-weight:800;
+           color:white;
+           padding-bottom:20px;
+           }
+
+#banner3  h3{padding-top:10px;
+    font-weight:600;
+    font-size:15px;
+           color:red;}
+
+#newsletter {display:flex;
+             justify-content:space-between;
+             flex-wrap:wrap;
+            align-items:center;
+            background-image:url(img/b_img2.jpg);
+            background-repeat:no-repeat;
+        background-position:20% 30%;}
+
+#newsletter h4 {font-size:30px;
+font-weight:800;}
+
+#newsletter p {font-size:20px;}
+
+#newsletter input {
+    height:4.125rem;
+    width:100%;
+    font-size:14px;
+    padding:0 1.25rem;
+border:1px solid transparent;
+border-radius:4px;
+outline:none;}
+
+#newsletter button {color:white;
+background-color:#7F8CAA;
+}
+
+#newsletter .form {display:flex;
+width:40;}
+
+#newsletter {margin-bottom :0;}
+
+#hey {
+
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding-top:0;
+  margin-top:0;
+  
+  background-color: #f4f4f4; 
+
+}
+
+.footcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding:15px;
+}
+
+.footbox1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding:15px;
+
+}
+
+.footbox1 h3 {
+  font-size:20px;
+  font-weight:700;
+  
+}
+
+.footbox1 h4 {
+  font-size:15px;
+  font-weight:300;
+  
+}
+
+.footbox11,
+.footbox12,
+.footbox13, 
+.footbox14 {
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.footbox2 {
+    text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footbox2 h4 {
+  font-size:15px;
+  font-weight:300;
+  
+}
+
