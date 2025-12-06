@@ -1,4 +1,4 @@
-# 🛍️ Trzzo Clothing Brand UI — Landing Page
+# 🛍️ Trezzo Clothing Brand UI — Landing Page
 
 A modern and responsive fashion brand landing page built using **HTML, CSS, and JavaScript**.  
 Designed with a clean hero banner, seasonal collections, offer highlights, and a smooth navigation structure — suitable for expanding into a full e-commerce frontend.
@@ -6,7 +6,7 @@ Designed with a clean hero banner, seasonal collections, offer highlights, and a
 ---
 
 # ### Live Demo  
-[Click here to view Treezo Page](https://nehasri-257.github.io/trezzo_webpage/)
+[Click here to view Trezzo Page](https://nehasri-257.github.io/trezzo_webpage/)
 
 
 
